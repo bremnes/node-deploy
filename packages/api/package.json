@@ -1,0 +1,29 @@
+{
+  "name": "@my-project/api",
+  "version": "0.0.1",
+  "description": "API",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "NODE_ENV=development & nodemon --watch \"src/**\" --watch \"../shared/src/**\" --ext \"js,ts,json\" src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint .",
+    "ts": "tsc --noEmit",
+    "ts:watch": "tsc -w --noEmit"
+  },
+  "private": true,
+  "dependencies": {
+    "@my-project/shared": "^0.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "http-status-codes": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es2019",
+    "lib": ["es2019", "DOM"],
+    "module": "commonjs",
+    "sourceMap": true,
+    "composite": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@my-project/*": ["./packages/*"],
+    }
+  },
+  "references": [
+    { "path": "./packages/shared" }
+  ]
+}

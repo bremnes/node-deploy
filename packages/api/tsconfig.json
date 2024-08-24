@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "es6",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    
+    "lib": ["es6"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "./dist",
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

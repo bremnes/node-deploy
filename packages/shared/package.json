@@ -1,0 +1,24 @@
+{
+  "name": "@my-project/shared",
+  "version": "0.0.1",
+  "description": "Types, schemas and utilities across the projects",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "ts": "tsc --noEmit",
+    "ts:watch": "tsc -w --noEmit"
+  },
+  "author": "",
+  "private": true,
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "ajv-i18n": "^4.2.0",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.2"
+  }
+}
